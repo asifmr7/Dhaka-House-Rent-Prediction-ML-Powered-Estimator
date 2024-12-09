@@ -10,7 +10,7 @@ Frontend Technologies: HTML, CSS, JavaScript
 Data Source: Kaggle
 
 Files in the Repository:
-updated_with_randomforest_final_with_pipeline_and_pickle (1).ipynb:
+updated_with_randomforest_final_with_pipeline_and_pickle (1).ipynb.
 The main notebook containing the model training code and implementation using Random Forest, integrated with pipeline processing.
 
 Other associated scripts for data preprocessing, API integration, and front-end files.
@@ -18,19 +18,19 @@ Other associated scripts for data preprocessing, API integration, and front-end 
 Prerequisites:
 Before using this project, make sure you have the following installed:
 
-Python (>= 3.8)
+Python (>= 3.8).
 Required Python Libraries (install using pip install -r requirements.txt):
 
-pandas
-numpy
-matplotlib
-scikit-learn
-flask
+pandas,
+numpy,
+matplotlib,
+scikit-learn,
+flask.
 
 
 Usage
 1. Clone the Repository
-git clone 
+git clone https://github.com/asifmr7/HOUSE_PRD.git 
 cd HOUSE_PRD
 2. Run the Flask Backend
 Make sure to update the file paths for the model and pipeline in your backend code. Start the Flask server:
