@@ -2,28 +2,265 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!-- Boxicons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <style>
+        /* General Styles */
+        body {
+            background: url('../static/dhaka-house-bg-enhanced.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #f1f1f1;
+            margin-bottom: 20px;
+        }
+
+        .dynamic-text {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            color: #fcfcfc;
+            font-style: italic;
+            animation: fadeInOut  infinite;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        /* Navbar */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          
+            background: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #eaedf1;
+            text-decoration: none;
+        }
+
+        .btn {
+            padding: 8px 15px;
+            background: #3d85c6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background: #2b6aa3;
+        }
+
+        /* Login Section */
+        .login.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .login-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group span {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            color: #ddd;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .button {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background: #3d85c6;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #2b6aa3;
+        }
+
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #3d85c6;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .signup-link {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        .signup-link a {
+            color: #3d85c6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-box h3 {
+            font-size: 1rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .footer-box a {
+            display: block;
+            font-size: 0.9rem;
+            color: #3d85c6;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+
+        .footer-box a:hover {
+            text-decoration: underline;
+        }
+
+        .social a {
+            font-size: 1.2rem;
+            margin-right: 10px;
+            color: #3d85c6;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 0.8rem;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="/login" method="post">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username"><br><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br><br>
-        <button type="submit">Login</button>
-    </form>
-    <p>Don't have an account? <a href="/signup">Create one</a></p>
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo">
+                <i class="bx bx-home"></i>Dhaka House Rent
+            </a>
+            <p class="dynamic-text">Discover affordable housing solutions in Dhaka today.Secure your dream rental in just a few clicks!!!!</p>
+            <a href="/sign-up" class="btn">Sign up</a>
+        </div>
+    </header>
     
-    {% with messages = get_flashed_messages(with_categories=true) %}
-      {% if messages %}
-        <ul>
-          {% for category, message in messages %}
-            <li class="{{ category }}">{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %}
+    <div class="login container">
+        <div class="login-container">
+            <h2>Welcome Back</h2>
+            <p>Please log in to access Dhaka House Rent services</p>
+            
+            
+            <form action="/login" method="POST">
+                <div class="input-group">
+                    <span>Email Address</span>
+                    <input type="email" name="username" id="username" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <span>Password</span>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <input type="submit" value="Log In" class="button">
+            </form>
+            <p class="signup-link">Don't have an account? <a href="/sign-up">Sign up now</a></p>
+        </div>
+    </div>
+    
+    <section class="footer">
+        <div class="footer-container">
+            <h2>Dhaka House Rent</h2>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#">Agency</a>
+                <a href="#">Building</a>
+                <a href="#">Rates</a>
+            </div>
+            <div class="footer-box">
+                <h3>Locations</h3>
+                <a href="#">Gulshan</a>
+                <a href="#">Uttara</a>
+                <a href="#">Mirpur</a>
+            </div> 
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">880**********</a>
+                <a href="#">Cse299@gmail.com</a>
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>               
+        </div>
+    </section>
+    
+    <div class="copyright">
+        <p>&#169 Nafiz E Zaman All rights reserved</p>
+    </div>
 </body>
 </html>

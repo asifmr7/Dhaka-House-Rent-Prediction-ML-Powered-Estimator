@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A House</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../static/styles.css">
+    <!-- Boxicons CDN for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+
+    
+</head>
+<body>
+
+    <!-- Header Section -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Add CSS directly in the HTML -->
+    <style>
+        
+        .logout-btn {
+            background-color: #2288ff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .logout-btn:hover {
+            background-color: #2288ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <!-- Logo Section -->
+            <a href="index.html" class="logo">
+                <i class="bx bx-home"></i>Dhaka House Rent
+            </a>
+            
+            <!-- Navigation Menu -->
+            <label for="menu"><i class='bx bx-menu' id="menu-icon"></i></label>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sales">Sales</a></li>
+                <li><a class="no" href="#properties">Properties</a></li>
+            </ul>
+            
+            <!-- User Information and Logout Button -->
+           
+                
+                <!-- Logout Button -->
+                <button class="logout-btn" onclick="logoutUser()">
+                    <i class="bx bx-log-out"></i> Logout
+                </button>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
+
+
+<script>
+    // Function to handle logout action
+    function logoutUser() {
+        if (confirm("Are you sure you want to log out?")) {
+            window.location.href = '/logout'; // Redirect to the Flask logout route
+        }
+    }
+</script>
+
+    
+
+    <!-- Home Section -->
+    <section class="home container" id="home">
+        <div class="home-text">
+            <h1>Find your next <br> Perfect Place to <br> Live.</h1>
+
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about container" id="about">
+        <div class="about-img">
+            <!-- About Image -->
+            <img src="../static/about.jpeg" alt="About Us">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We provide the best<br>Property For You!</h2>
+            <p>At Dhaka House Price, we pride ourselves on offering the most competitive rental property prices...</p>
+            <!-- Button to trigger modal -->
+            <button id="myBtn" class="btn">See more</button>
+        </div>
+    </section>
+
+    <!-- Sales Section -->
+    <section class="sales container" id="sales">
+        <div class="box">
+            <i class="bx bx-user"></i>
+            <h3>Make your dream come true</h3>
+        </div>
+        <div class="box">
+            <i class="bx bx-desktop"></i>
+            <h3>Start your membership</h3>
+        </div>
+        <div class="box">
+            <i class="bx bx-home-alt"></i>
+            <h3>Enjoy your new home</h3>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="properties container" id="properties">
+        <div class="heading">
+            <span>Recent</span>
+            <h2>Our Featured Properties</h2>
+            <p>Discover our featured rental properties, hand-picked to offer unparalleled comfort and convenience. Each listing is meticulously curated to provide the perfect blend of style, location, and affordability.</p>
+        </div>
+        <div class="properties-container container">
+            <div class="box">
+                <img src="../static/p6.jpg.jpeg" alt="">
+                <h3>Tk 51,000</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>Gulshan, Dhaka</p>
+                    </div>
+                    <div class="icon">
+                        <i class="bx bx-bed"><span>5</span></i>
+                        <i class="bx bx-bath"><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../static/p5.jpg.jpeg" alt="">
+                <h3>Tk 51,000</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>Gulshan, Dhaka</p>
+                    </div>
+                    <div class="icon">
+                        <i class="bx bx-bed"><span>5</span></i>
+                        <i class="bx bx-bath"><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../static/p4.jpg.jpeg" alt="">
+                <h3>Tk 51,000</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>Gulshan, Dhaka</p>
+                    </div>
+                    <div class="icon">
+                        <i class="bx bx-bed"><span>5</span></i>
+                        <i class="bx bx-bath"><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../static/p3.jpg.jpeg" alt="">
+                <h3>Tk 51,000</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>Gulshan, Dhaka</p>
+                    </div>
+                    <div class="icon">
+                        <i class="bx bx-bed"><span>5</span></i>
+                        <i class="bx bx-bath"><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../static/p2.jpg.jpeg" alt="">
+                <h3>Tk 51,000</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>Gulshan, Dhaka</p>
+                    </div>
+                    <div class="icon">
+                        <i class="bx bx-bed"><span>5</span></i>
+                        <i class="bx bx-bath"><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../static/p1.jpg.jpg" alt="">
+                <h3>Tk 51,000</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>Gulshan, Dhaka</p>
+                    </div>
+                    <div class="icon">
+                        <i class="bx bx-bed"><span>5</span></i>
+                        <i class="bx bx-bath"><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter container">
+        <h2>Have Questions in mind? <br>Let us help you</h2>
+        <form action="">
+            <!-- Email Input -->
+            <input type="email" name="" id="mail-box" placeholder="yourmail@gmail.com" required>
+            <!-- Submit Button -->
+            <input type="submit" value="Send" class="btn">
+        </form>
+    </section>
+
+    
+    <!-- Modal for Price Prediction -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Welcome to House Rent Predictor</h2>
+        </div>
+        <div class="heading">Want to predict the rent of a house in Dhaka? Fill in the information below:</div>
+
+        <!-- Form for Input Data -->
+        <form id="predictionForm" class="form-inline" action="/predict" method="POST">
+            <!-- Location Dropdown -->
+            <label for="location">Enter the location:</label>
+            <select class="selectpicker form-control" name="location" id="location" required>
+                {% for location in location_suggestions %}
+                    <option value="{{ location }}">{{ location }}</option>
+                {% endfor %}
+            </select>
+
+            <!-- Other Form Inputs -->
+            <label for="area">Enter total square feet:</label>
+            <input type="number" name="area" placeholder="Enter total square feet" required>
+
+            <label for="bed">Enter the number of bedrooms (BHK):</label>
+            <input type="number" name="bed" placeholder="Enter BHK" required>
+
+            <label for="bath">Enter the number of bathrooms:</label>
+            <input type="number" name="bath" placeholder="Enter no. of bathrooms" required>
+
+            <button class="form-btn" type="submit">Submit</button>
+        </form>
+
+        <!-- Display Prediction Result -->
+        <div id="predictionResult" style="margin-top: 20px; font-weight: bold;"></div>
+    </div>
+</div>
+
+<script>
+    // AJAX form submission for prediction
+    document.getElementById('predictionForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Gather form data
+        const formData = new FormData(this);
+
+        // Send AJAX request to /predict endpoint
+        fetch('/predict', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json()) // Parse JSON response
+        .then(data => {
+            if (data.predicted_price) {
+                // Display the prediction result
+                document.getElementById('predictionResult').innerText = 
+                    `Predicted Rent Price: ${data.predicted_price} Taka`;
+            } else if (data.error) {
+                document.getElementById('predictionResult').innerText = 
+                    `Error: ${data.error}`;
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('predictionResult').innerText = 
+                'An error occurred while processing your request.';
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="footer-container">
+            <h2>Dhaka House Rent</h2>
+            <!-- Footer Links -->
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#">Agency</a>
+                <a href="#">Building</a>
+                <a href="#">Rates</a>
+            </div>
+            <div class="footer-box">
+                <h3>Locations</h3>
+                <a href="#">Gulshan</a>
+                <a href="#">Uttara</a>
+                <a href="#">Mirpur</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">880**********</a>
+                <a href="#">Cse299@gmail.com</a>
+                <div class="social">
+                    <!-- Social Media Icons -->
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Copyright -->
+    <div class="copyright">
+        <p>&#169 Nafiz E Zaman All rights reserved</p>
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        // Modal Functionality
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
