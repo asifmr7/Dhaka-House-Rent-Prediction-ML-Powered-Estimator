@@ -15,7 +15,7 @@ try:
     conn = psycopg2.connect(
         dbname="Housedb",
         user="postgres",
-        password="mamun2483asif",
+        password="********",
         host="localhost",
         port="5432"
     )
